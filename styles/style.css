@@ -33,18 +33,10 @@ a {
 	color: var(--accent-solid);
 }
 
-.smokefeather {--accent-solid: #427057;}
-.beechfang {--accent-solid: #6e8c0a;}
-.mistyfalcon {--accent-solid: #1944c1;}
-.nighthawk {--accent-solid: #d15c2a;}
-.eosphoros {--accent-solid: #5c563d;}
-.birdsong {--accent-solid: #5bbd75;}
-.swiftspirit {--accent-solid: #52c4c2;}
-.featherfrost {--accent-solid: #1697ce;}
-.brackenwing {--accent-solid: #702fd8;}
-.whitesnake {--accent-solid: #d5983b;}
-.harechaser {--accent-solid: #3c9613;}
-.wolfblossom {--accent-solid: #a0c8e6;}
+.swiftheart {--accent-solid: #ff00ff;}
+.batsong {--accent-solid: #009900;}
+.sprucebark {--accent-solid: #0000ff;}
+.daisybreeze {--accent-solid: #9900ff;}
 
 header, main, footer {
 	width: var(--content-width);
