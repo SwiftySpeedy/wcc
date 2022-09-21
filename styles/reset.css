@@ -1,0 +1,121 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *:before, *:after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+html {
+	/* Font scales based on user preferences with a proper line height */
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	line-height: inherit;
+	/* Spacing based on character width - word spacing should be roughly 3x letter spacing. This makes font readable for those with blurred vision/dyslexics */
+	letter-spacing: .08ch;
+	word-spacing: 0.24ch;
+}
+
+a:link, a:visited {
+	text-decoration-skip-ink: auto;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+}
+
+/* Remove outline from links and other objects that shouldn't recieve focus */
+[tabindex="-1"]:focus {
+	outline: none!important;
+}
+
+h1,h2,h3,h4,h5,h6,div,section,p,blockquote,details,summary,dl,dt,dd,figure,figcaption,img,picture {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: inherit;
+}
+
+/* HTML5 Element Display Fallback */
+section, article, aside, details, figure, figcaption, 
+footer, header, hgroup, menu, nav {
+	display: block;
+}
+
+summary h2, summary h3, summary h4, summary h5, summary h6 {
+	display: inline-block;
+}
+
+/* Anywhere from 50-70 characters is the optimal line width for reading */
+p {
+	max-width: 70ch;
+}
+
+/* Remove default list styles from lists that have classes */
+ol[class], ul[class] {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img, picture {
+	display: block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+form {
+	display: block;
+}
+
+fieldset {
+	display: inline-block;
+	width: auto;
+	margin: 0 auto;
+}
+legend {
+	font-weight: bold;
+}
+
+input, button, ::file-selector-button, select, textarea {
+	margin: 0;
+	padding: 2px;
+	vertical-align: middle;
+	border: 1px solid #000;
+	border-radius: 2px;
+	box-shadow: none;
+	font-family: inherit;
+	font-size: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+}
+
+input[type="file"] {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Cursor change to better show elements that are clickable */
+summary, button, select, [type="reset"], [type="button"], [type="submit"], [type="radio"], [type="checkbox"], ::file-selector-button {
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
